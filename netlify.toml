@@ -1,7 +1,7 @@
 # Netlify deployment config for Flutter Web SPA
 
 [build]
-  command = "flutter build web --release"
+  command = "git clone https://github.com/flutter/flutter.git -b stable --depth 1 && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter build web --release"
   publish = "build/web"
 
 # SPA redirect — all routes point to index.html so GoRouter handles navigation
