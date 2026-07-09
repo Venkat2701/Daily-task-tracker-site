@@ -36,6 +36,7 @@ dev_dependencies:
   mockito: ^5.4.4
   build_runner: ^2.4.13
   riverpod_generator: ^2.4.3
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
@@ -43,3 +44,8 @@ flutter:
   assets:
     - assets/images/mayvel_logo.png
     - assets/images/pro_inspector_logo.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/images/mayvel_logo.png"
