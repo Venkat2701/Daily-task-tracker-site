@@ -1,0 +1,11 @@
+# Netlify deployment config for Flutter Web SPA
+
+[build]
+  command = "flutter build web --release"
+  publish = "build/web"
+
+# SPA redirect — all routes point to index.html so GoRouter handles navigation
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
